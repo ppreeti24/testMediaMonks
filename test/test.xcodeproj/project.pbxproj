@@ -27,6 +27,8 @@
 		9F90B9F3224A84CF00E1BD9E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F90B9F2224A84CF00E1BD9E /* Media.xcassets */; };
 		9F90B9FA224A874D00E1BD9E /* PhotoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90B9F8224A874D00E1BD9E /* PhotoDetailVC.swift */; };
 		9F90B9FB224A874D00E1BD9E /* PhotoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90B9F9224A874D00E1BD9E /* PhotoListVC.swift */; };
+		9F90B9FE224A89EB00E1BD9E /* AlbumListCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90B9FD224A89EB00E1BD9E /* AlbumListCVCell.swift */; };
+		9F90BA00224A8A0400E1BD9E /* PhotoListCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90B9FF224A8A0400E1BD9E /* PhotoListCVCell.swift */; };
 		9FE4D44C2249EC94002FAD92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4D44B2249EC94002FAD92 /* AppDelegate.swift */; };
 		9FE4D44E2249EC94002FAD92 /* AlbumListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4D44D2249EC94002FAD92 /* AlbumListVC.swift */; };
 		9FE4D4512249EC94002FAD92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE4D44F2249EC94002FAD92 /* Main.storyboard */; };
@@ -91,6 +93,8 @@
 		9F90B9F2224A84CF00E1BD9E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		9F90B9F8224A874D00E1BD9E /* PhotoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailVC.swift; sourceTree = "<group>"; };
 		9F90B9F9224A874D00E1BD9E /* PhotoListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListVC.swift; sourceTree = "<group>"; };
+		9F90B9FD224A89EB00E1BD9E /* AlbumListCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListCVCell.swift; sourceTree = "<group>"; };
+		9F90B9FF224A8A0400E1BD9E /* PhotoListCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListCVCell.swift; sourceTree = "<group>"; };
 		9FE4D4482249EC94002FAD92 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE4D44B2249EC94002FAD92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE4D44D2249EC94002FAD92 /* AlbumListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListVC.swift; sourceTree = "<group>"; };
@@ -189,9 +193,10 @@
 		9F90B9F6224A850500E1BD9E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9F90B9F8224A874D00E1BD9E /* PhotoDetailVC.swift */,
-				9F90B9F9224A874D00E1BD9E /* PhotoListVC.swift */,
 				9FE4D44D2249EC94002FAD92 /* AlbumListVC.swift */,
+				9F90B9F9224A874D00E1BD9E /* PhotoListVC.swift */,
+				9F90B9F8224A874D00E1BD9E /* PhotoDetailVC.swift */,
+				9F90B9FC224A89BE00E1BD9E /* Cells */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -203,6 +208,15 @@
 				9FE4D44F2249EC94002FAD92 /* Main.storyboard */,
 			);
 			path = " AppDelegate & Stroyboard";
+			sourceTree = "<group>";
+		};
+		9F90B9FC224A89BE00E1BD9E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9F90B9FD224A89EB00E1BD9E /* AlbumListCVCell.swift */,
+				9F90B9FF224A8A0400E1BD9E /* PhotoListCVCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		9FE4D43F2249EC94002FAD92 = {
@@ -398,6 +412,7 @@
 				9F90B9E5224A848400E1BD9E /* UIImageView+HighlightedWebCache.m in Sources */,
 				9FE4D44E2249EC94002FAD92 /* AlbumListVC.swift in Sources */,
 				9F90B9EF224A848400E1BD9E /* UIView+WebCacheOperation.m in Sources */,
+				9F90B9FE224A89EB00E1BD9E /* AlbumListCVCell.swift in Sources */,
 				9F90B9EB224A848400E1BD9E /* SDImageCache.m in Sources */,
 				9F90B9E3224A848300E1BD9E /* SDWebImageManager.m in Sources */,
 				9F90B9E9224A848400E1BD9E /* SDWebImageCompat.m in Sources */,
@@ -405,6 +420,7 @@
 				9F90B9ED224A848400E1BD9E /* NSData+ImageContentType.m in Sources */,
 				9F90B9FA224A874D00E1BD9E /* PhotoDetailVC.swift in Sources */,
 				9F90B9FB224A874D00E1BD9E /* PhotoListVC.swift in Sources */,
+				9F90BA00224A8A0400E1BD9E /* PhotoListCVCell.swift in Sources */,
 				9FE4D44C2249EC94002FAD92 /* AppDelegate.swift in Sources */,
 				9F90B9E6224A848400E1BD9E /* SDWebImageDownloader.m in Sources */,
 				9FE4D4542249EC94002FAD92 /* test.xcdatamodeld in Sources */,
