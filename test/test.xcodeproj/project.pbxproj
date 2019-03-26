@@ -25,8 +25,10 @@
 		9F90B9EF224A848400E1BD9E /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90B9DA224A848300E1BD9E /* UIView+WebCacheOperation.m */; };
 		9F90B9F0224A848400E1BD9E /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90B9DE224A848300E1BD9E /* UIButton+WebCache.m */; };
 		9F90B9F3224A84CF00E1BD9E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F90B9F2224A84CF00E1BD9E /* Media.xcassets */; };
+		9F90B9FA224A874D00E1BD9E /* PhotoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90B9F8224A874D00E1BD9E /* PhotoDetailVC.swift */; };
+		9F90B9FB224A874D00E1BD9E /* PhotoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90B9F9224A874D00E1BD9E /* PhotoListVC.swift */; };
 		9FE4D44C2249EC94002FAD92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4D44B2249EC94002FAD92 /* AppDelegate.swift */; };
-		9FE4D44E2249EC94002FAD92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4D44D2249EC94002FAD92 /* ViewController.swift */; };
+		9FE4D44E2249EC94002FAD92 /* AlbumListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4D44D2249EC94002FAD92 /* AlbumListVC.swift */; };
 		9FE4D4512249EC94002FAD92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE4D44F2249EC94002FAD92 /* Main.storyboard */; };
 		9FE4D4542249EC94002FAD92 /* test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4D4522249EC94002FAD92 /* test.xcdatamodeld */; };
 		9FE4D4562249EC9A002FAD92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE4D4552249EC9A002FAD92 /* Assets.xcassets */; };
@@ -87,9 +89,11 @@
 		9F90B9DF224A848300E1BD9E /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		9F90B9F1224A84A800E1BD9E /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		9F90B9F2224A84CF00E1BD9E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		9F90B9F8224A874D00E1BD9E /* PhotoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailVC.swift; sourceTree = "<group>"; };
+		9F90B9F9224A874D00E1BD9E /* PhotoListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListVC.swift; sourceTree = "<group>"; };
 		9FE4D4482249EC94002FAD92 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE4D44B2249EC94002FAD92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FE4D44D2249EC94002FAD92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FE4D44D2249EC94002FAD92 /* AlbumListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListVC.swift; sourceTree = "<group>"; };
 		9FE4D4502249EC94002FAD92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FE4D4532249EC94002FAD92 /* test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = test.xcdatamodel; sourceTree = "<group>"; };
 		9FE4D4552249EC9A002FAD92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -185,7 +189,9 @@
 		9F90B9F6224A850500E1BD9E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9FE4D44D2249EC94002FAD92 /* ViewController.swift */,
+				9F90B9F8224A874D00E1BD9E /* PhotoDetailVC.swift */,
+				9F90B9F9224A874D00E1BD9E /* PhotoListVC.swift */,
+				9FE4D44D2249EC94002FAD92 /* AlbumListVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -390,13 +396,15 @@
 				9F90B9EA224A848400E1BD9E /* SDWebImagePrefetcher.m in Sources */,
 				9F90B9EC224A848400E1BD9E /* SDWebImageDownloaderOperation.m in Sources */,
 				9F90B9E5224A848400E1BD9E /* UIImageView+HighlightedWebCache.m in Sources */,
-				9FE4D44E2249EC94002FAD92 /* ViewController.swift in Sources */,
+				9FE4D44E2249EC94002FAD92 /* AlbumListVC.swift in Sources */,
 				9F90B9EF224A848400E1BD9E /* UIView+WebCacheOperation.m in Sources */,
 				9F90B9EB224A848400E1BD9E /* SDImageCache.m in Sources */,
 				9F90B9E3224A848300E1BD9E /* SDWebImageManager.m in Sources */,
 				9F90B9E9224A848400E1BD9E /* SDWebImageCompat.m in Sources */,
 				9F90B9E8224A848400E1BD9E /* UIImage+MultiFormat.m in Sources */,
 				9F90B9ED224A848400E1BD9E /* NSData+ImageContentType.m in Sources */,
+				9F90B9FA224A874D00E1BD9E /* PhotoDetailVC.swift in Sources */,
+				9F90B9FB224A874D00E1BD9E /* PhotoListVC.swift in Sources */,
 				9FE4D44C2249EC94002FAD92 /* AppDelegate.swift in Sources */,
 				9F90B9E6224A848400E1BD9E /* SDWebImageDownloader.m in Sources */,
 				9FE4D4542249EC94002FAD92 /* test.xcdatamodeld in Sources */,
