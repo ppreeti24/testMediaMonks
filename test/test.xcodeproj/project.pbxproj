@@ -190,8 +190,8 @@
 		9F90B9F4224A84E800E1BD9E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9F90BA04224A9B3F00E1BD9E /* PhotoListModel.swift */,
 				9F90BA02224A8E2D00E1BD9E /* AlbumListModel.swift */,
+				9F90BA04224A9B3F00E1BD9E /* PhotoListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

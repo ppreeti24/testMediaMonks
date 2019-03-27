@@ -10,6 +10,7 @@ import UIKit
 
 class PhotoListVC: UIViewController {
     @IBOutlet weak var PhotoListCollectionView: UICollectionView!
+    var SubAlbumPhotoList   :   [PhotoListDictModel]    =   []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +26,20 @@ class PhotoListVC: UIViewController {
 extension PhotoListVC : UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return SubAlbumPhotoList.count
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoListCVCell", for: indexPath) as? PhotoListCVCell else { fatalError("Cell not exists in storyboard")}
         
+        let modelObj    =   self.SubAlbumPhotoList[indexPath.row]
+
+        if modelObj.photo_thumbnailUrl != "" {
+            let url1 = URL(string: "\(modelObj.photo_thumbnailUrl)")!
+            cell.imgView.sd_setImage(with: url1, placeholderImage: UIImage.init(named: "placeholder-image"))
+        }
+
         return cell
     }
     

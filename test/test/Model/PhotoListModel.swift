@@ -9,10 +9,11 @@
 import UIKit
 
 class PhotoListModel: NSObject {
-    var isError       :   Int                     =   0
-    var msgForError   :   String                  =   ""
-    var PhotoListDictModelObj      :   [PhotoListDictModel]    =   []
-    
+    var isError                 :   Int                     =   0
+    var msgForError             :   String                  =   ""
+    var PhotoListDictModelObj   :   [PhotoListDictModel]    =   []
+   // var AlbumListDictModelObj   :   [AlbumListDictModel]    =   []
+
     
     override init() {
         super.init()
@@ -20,8 +21,10 @@ class PhotoListModel: NSObject {
     init(response:[[String:AnyObject]]) {
         for item in response{
             let modelObj =   PhotoListDictModel(itemDict: item)
+            
             self.PhotoListDictModelObj.append(modelObj)
         }
+
     }
 }
 
@@ -34,11 +37,11 @@ class PhotoListDictModel :  NSObject {
     var photo_thumbnailUrl      :   String      =   ""
     
     init(itemDict:[String:AnyObject]) {
-        self.photo_albumId      =   ((itemDict["albumId"] as? Int) ?? 0) as Int
-        self.photo_id          =   (((itemDict["id"] as? Int) ?? 0) as Int)
-        self.photo_title      =   ((itemDict["title"] as? String) ?? "") as String
-        self.photo_url      =   ((itemDict["url"] as? String) ?? "") as String
-        self.photo_thumbnailUrl      =   ((itemDict["thumbnailUrl"] as? String) ?? "") as String
+        self.photo_albumId       =   ((itemDict["albumId"] as? Int) ?? 0) as Int
+        self.photo_id            =   (((itemDict["id"] as? Int) ?? 0) as Int)
+        self.photo_title         =   ((itemDict["title"] as? String) ?? "") as String
+        self.photo_url           =   ((itemDict["url"] as? String) ?? "") as String
+        self.photo_thumbnailUrl  =   ((itemDict["thumbnailUrl"] as? String) ?? "") as String
         
     }
 }

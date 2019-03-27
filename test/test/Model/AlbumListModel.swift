@@ -10,17 +10,18 @@ import UIKit
 
 class AlbumListModel: NSObject {
     
-    var isError       :   Int                     =   0
-    var msgForError   :   String                  =   ""
-    var AlbumListDictModelObj      :   [AlbumListDictModel]    =   []
-    
-    
+    var isError                :   Int                     =   0
+    var msgForError            :   String                  =   ""
+    var AlbumListDictModelObj  :   [AlbumListDictModel]    =   []
+   // var AlbumPhotoList   :   [PhotoListDictModel]    =   []
+
+
     override init() {
         super.init()
     }
-    init(response:[[String:AnyObject]]) {
+    init(response:[[String:AnyObject]], AlbumPhotoList:[PhotoListDictModel]) {
             for item in response{
-                let modelObj =   AlbumListDictModel(itemDict: item)
+                let modelObj =   AlbumListDictModel(itemDict: item, AlbumPhotoList: AlbumPhotoList)
                 self.AlbumListDictModelObj.append(modelObj)
             }
     }
@@ -28,15 +29,23 @@ class AlbumListModel: NSObject {
 
 
 class AlbumListDictModel :  NSObject {
-    var album_userId                :   Int      =   0
-    var album_id       :   Int      =   0
+    var album_userId      :   Int      =   0
+    var album_id          :   Int      =   0
     var album_title       :   String      =   ""
     
-    
-    init(itemDict:[String:AnyObject]) {
+    var SubAlbumPhotoList   :   [PhotoListDictModel]    =   []
+
+    init(itemDict:[String:AnyObject], AlbumPhotoList:[PhotoListDictModel]) {
         self.album_userId      =   ((itemDict["userId"] as? Int) ?? 0) as Int
         self.album_id          =   (((itemDict["id"] as? Int) ?? 0) as Int)
-        self.album_title      =   ((itemDict["title"] as? String) ?? "") as String
-        
+        self.album_title       =   ((itemDict["title"] as? String) ?? "") as String
+     
+        for itemPhoto in AlbumPhotoList{
+            if album_id == itemPhoto.photo_albumId{
+                self.SubAlbumPhotoList.append(itemPhoto)
+            }
+        }
+        print("SubAlbumPhotoList.count...\(SubAlbumPhotoList.count)")
+
     }
 }
