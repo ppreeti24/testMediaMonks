@@ -50,7 +50,7 @@ class Utils: NSObject {
     }
         
     public static  func HideActivityIndicator(_ uiView: UIView) {
-        
+
         if actInd.isDescendant(of: uiView) {
             actInd.stopAnimating()
             loadingView.removeFromSuperview()
@@ -58,5 +58,18 @@ class Utils: NSObject {
                 print("Activity indicator not found on the view to be stopped")
             }
     }
+    
+    public static var iPhoneIsXSeries: Bool {
+        if #available(iOS 11.0,  *) {
+            return UIApplication.shared.delegate?.window??.safeAreaInsets.top ?? 0 > 20
+        }
+        return false
+    }
+
+}
+class InteractorForVC: UIPercentDrivenInteractiveTransition {
+    
+    var hasStarted  =   false
+    var shouldFinish    =   false
     
 }

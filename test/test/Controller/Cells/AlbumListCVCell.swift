@@ -24,12 +24,12 @@ class AlbumListCVCell: UICollectionViewCell {
         self.imgView.clipsToBounds       =   true
         
         self.AlbumNameLabel.textColor    =   Colors.black
-        self.AlbumNameLabel.font         =   Fonts.Bold_14
+        self.AlbumNameLabel.font         =   Fonts.Normal_16
         self.AlbumNameLabel.lineBreakMode    =   .byTruncatingTail
-        self.AlbumNameLabel.numberOfLines    =   1
+        self.AlbumNameLabel.numberOfLines    =   2
         
-        self.AlbumCountLabel.textColor    =   Colors.darkGray
-        self.AlbumCountLabel.font         =   Fonts.Normal_10
+        self.AlbumCountLabel.textColor    =   Colors.lightGray
+        self.AlbumCountLabel.font         =   Fonts.Normal_14
         self.AlbumCountLabel.backgroundColor = Colors.clear
         
     }

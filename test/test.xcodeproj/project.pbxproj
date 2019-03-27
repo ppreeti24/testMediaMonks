@@ -25,12 +25,14 @@
 		9F90B9EF224A848400E1BD9E /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90B9DA224A848300E1BD9E /* UIView+WebCacheOperation.m */; };
 		9F90B9F0224A848400E1BD9E /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F90B9DE224A848300E1BD9E /* UIButton+WebCache.m */; };
 		9F90B9F3224A84CF00E1BD9E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F90B9F2224A84CF00E1BD9E /* Media.xcassets */; };
-		9F90B9FA224A874D00E1BD9E /* PhotoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90B9F8224A874D00E1BD9E /* PhotoDetailVC.swift */; };
 		9F90B9FB224A874D00E1BD9E /* PhotoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90B9F9224A874D00E1BD9E /* PhotoListVC.swift */; };
 		9F90B9FE224A89EB00E1BD9E /* AlbumListCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90B9FD224A89EB00E1BD9E /* AlbumListCVCell.swift */; };
 		9F90BA00224A8A0400E1BD9E /* PhotoListCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90B9FF224A8A0400E1BD9E /* PhotoListCVCell.swift */; };
 		9F90BA03224A8E2D00E1BD9E /* AlbumListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90BA02224A8E2D00E1BD9E /* AlbumListModel.swift */; };
 		9F90BA05224A9B4000E1BD9E /* PhotoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90BA04224A9B3F00E1BD9E /* PhotoListModel.swift */; };
+		9F90BA0D224BC11000E1BD9E /* PhotoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90BA0C224BC10F00E1BD9E /* PhotoDetailVC.swift */; };
+		9F90BA0F224BC12200E1BD9E /* PhotoDetailCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90BA0E224BC12200E1BD9E /* PhotoDetailCVCell.swift */; };
+		9F90BA11224BC55E00E1BD9E /* DissmissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90BA10224BC55E00E1BD9E /* DissmissAnimator.swift */; };
 		9FE4D44C2249EC94002FAD92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4D44B2249EC94002FAD92 /* AppDelegate.swift */; };
 		9FE4D44E2249EC94002FAD92 /* AlbumListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4D44D2249EC94002FAD92 /* AlbumListVC.swift */; };
 		9FE4D4512249EC94002FAD92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE4D44F2249EC94002FAD92 /* Main.storyboard */; };
@@ -93,12 +95,14 @@
 		9F90B9DF224A848300E1BD9E /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		9F90B9F1224A84A800E1BD9E /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		9F90B9F2224A84CF00E1BD9E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		9F90B9F8224A874D00E1BD9E /* PhotoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailVC.swift; sourceTree = "<group>"; };
 		9F90B9F9224A874D00E1BD9E /* PhotoListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListVC.swift; sourceTree = "<group>"; };
 		9F90B9FD224A89EB00E1BD9E /* AlbumListCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListCVCell.swift; sourceTree = "<group>"; };
 		9F90B9FF224A8A0400E1BD9E /* PhotoListCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListCVCell.swift; sourceTree = "<group>"; };
 		9F90BA02224A8E2D00E1BD9E /* AlbumListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListModel.swift; sourceTree = "<group>"; };
 		9F90BA04224A9B3F00E1BD9E /* PhotoListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListModel.swift; sourceTree = "<group>"; };
+		9F90BA0C224BC10F00E1BD9E /* PhotoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailVC.swift; sourceTree = "<group>"; };
+		9F90BA0E224BC12200E1BD9E /* PhotoDetailCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailCVCell.swift; sourceTree = "<group>"; };
+		9F90BA10224BC55E00E1BD9E /* DissmissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DissmissAnimator.swift; sourceTree = "<group>"; };
 		9FE4D4482249EC94002FAD92 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE4D44B2249EC94002FAD92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE4D44D2249EC94002FAD92 /* AlbumListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListVC.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 		9F90B9BE224A848300E1BD9E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9F90BA10224BC55E00E1BD9E /* DissmissAnimator.swift */,
 				9F90B9BF224A848300E1BD9E /* UIConstants.swift */,
 				9F90B9C0224A848300E1BD9E /* extensionClass.swift */,
 				9F90B9C1224A848300E1BD9E /* Utils.swift */,
@@ -201,7 +206,7 @@
 			children = (
 				9FE4D44D2249EC94002FAD92 /* AlbumListVC.swift */,
 				9F90B9F9224A874D00E1BD9E /* PhotoListVC.swift */,
-				9F90B9F8224A874D00E1BD9E /* PhotoDetailVC.swift */,
+				9F90BA0C224BC10F00E1BD9E /* PhotoDetailVC.swift */,
 				9F90B9FC224A89BE00E1BD9E /* Cells */,
 			);
 			path = Controller;
@@ -221,6 +226,7 @@
 			children = (
 				9F90B9FD224A89EB00E1BD9E /* AlbumListCVCell.swift */,
 				9F90B9FF224A8A0400E1BD9E /* PhotoListCVCell.swift */,
+				9F90BA0E224BC12200E1BD9E /* PhotoDetailCVCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -417,6 +423,7 @@
 				9F90B9EC224A848400E1BD9E /* SDWebImageDownloaderOperation.m in Sources */,
 				9F90B9E5224A848400E1BD9E /* UIImageView+HighlightedWebCache.m in Sources */,
 				9FE4D44E2249EC94002FAD92 /* AlbumListVC.swift in Sources */,
+				9F90BA0D224BC11000E1BD9E /* PhotoDetailVC.swift in Sources */,
 				9F90BA05224A9B4000E1BD9E /* PhotoListModel.swift in Sources */,
 				9F90B9EF224A848400E1BD9E /* UIView+WebCacheOperation.m in Sources */,
 				9F90B9FE224A89EB00E1BD9E /* AlbumListCVCell.swift in Sources */,
@@ -425,11 +432,12 @@
 				9F90B9E9224A848400E1BD9E /* SDWebImageCompat.m in Sources */,
 				9F90B9E8224A848400E1BD9E /* UIImage+MultiFormat.m in Sources */,
 				9F90B9ED224A848400E1BD9E /* NSData+ImageContentType.m in Sources */,
-				9F90B9FA224A874D00E1BD9E /* PhotoDetailVC.swift in Sources */,
 				9F90B9FB224A874D00E1BD9E /* PhotoListVC.swift in Sources */,
+				9F90BA0F224BC12200E1BD9E /* PhotoDetailCVCell.swift in Sources */,
 				9F90BA00224A8A0400E1BD9E /* PhotoListCVCell.swift in Sources */,
 				9FE4D44C2249EC94002FAD92 /* AppDelegate.swift in Sources */,
 				9F90B9E6224A848400E1BD9E /* SDWebImageDownloader.m in Sources */,
+				9F90BA11224BC55E00E1BD9E /* DissmissAnimator.swift in Sources */,
 				9FE4D4542249EC94002FAD92 /* test.xcdatamodeld in Sources */,
 				9F90BA03224A8E2D00E1BD9E /* AlbumListModel.swift in Sources */,
 				9F90B9E4224A848300E1BD9E /* SDWebImageDecoder.m in Sources */,

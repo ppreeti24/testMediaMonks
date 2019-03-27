@@ -116,3 +116,13 @@ extension UITextView {
     
 }
 
+extension String {
+    var firstCapitalized: String {
+        var components = self.components(separatedBy: " ")
+        guard let first = components.first else {
+            return self
+        }
+        components[0] = first.capitalized
+        return components.joined(separator: " ")
+    }
+}

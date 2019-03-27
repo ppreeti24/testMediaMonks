@@ -39,7 +39,7 @@ class PhotoListDictModel :  NSObject {
     init(itemDict:[String:AnyObject]) {
         self.photo_albumId       =   ((itemDict["albumId"] as? Int) ?? 0) as Int
         self.photo_id            =   (((itemDict["id"] as? Int) ?? 0) as Int)
-        self.photo_title         =   ((itemDict["title"] as? String) ?? "") as String
+        self.photo_title         =   (((itemDict["title"] as? String) ?? "") as String).firstCapitalized
         self.photo_url           =   ((itemDict["url"] as? String) ?? "") as String
         self.photo_thumbnailUrl  =   ((itemDict["thumbnailUrl"] as? String) ?? "") as String
         

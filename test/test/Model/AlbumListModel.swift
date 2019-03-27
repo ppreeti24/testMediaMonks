@@ -38,7 +38,7 @@ class AlbumListDictModel :  NSObject {
     init(itemDict:[String:AnyObject], AlbumPhotoList:[PhotoListDictModel]) {
         self.album_userId      =   ((itemDict["userId"] as? Int) ?? 0) as Int
         self.album_id          =   (((itemDict["id"] as? Int) ?? 0) as Int)
-        self.album_title       =   ((itemDict["title"] as? String) ?? "") as String
+        self.album_title       =   (((itemDict["title"] as? String) ?? "") as String).firstCapitalized
      
         for itemPhoto in AlbumPhotoList{
             if album_id == itemPhoto.photo_albumId{
