@@ -25,7 +25,8 @@ class PhotoDetailVC: UIViewController , UIGestureRecognizerDelegate{
     var interactor:InteractorForVC?
     var selectedIndex: Int  = 0
     var buttonSize: Int  = 45
-    
+    var buttonY: Int  = 0
+
     init(pictures:[String], photosTitles:[String], imageObj:UIImage = #imageLiteral(resourceName: "placeholder-image")) {
         self.pictures  = pictures
         imageObj1 = imageObj
@@ -79,7 +80,8 @@ class PhotoDetailVC: UIViewController , UIGestureRecognizerDelegate{
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         
         buttonSize = Utils.iPhoneIsXSeries ? 70 : 45
-        
+        buttonY = Utils.iPhoneIsXSeries ? 25 : 0
+
         // collection view
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -97,14 +99,14 @@ class PhotoDetailVC: UIViewController , UIGestureRecognizerDelegate{
         collectionView!.bounces = false
         view.addSubview(collectionView!)
         
-        let closeButton = UIButton(frame: CGRect(x: 0, y: 0, width: buttonSize, height: buttonSize ))
+        let closeButton = UIButton(frame: CGRect(x: 0, y: buttonY, width: buttonSize, height: buttonSize ))
         closeButton.setImage( #imageLiteral(resourceName: "Back").withRenderingMode(.alwaysTemplate) , for: .normal)
         closeButton.tintColor = UIColor.white
         closeButton.backgroundColor = Colors.black.withAlphaComponent(0.1)
         closeButton.addTarget(self, action: #selector(closeVC), for: .touchUpInside)
         view.addSubview(closeButton)
         
-        titleLabel.frame = CGRect(x: 45, y: 0, width: view.frame.width-50, height: 45)
+        titleLabel.frame = CGRect(x: CGFloat(buttonSize), y: CGFloat(buttonY), width: view.frame.width-CGFloat(buttonSize), height: CGFloat(buttonSize))
         view.addSubview(titleLabel)
         titleLabel.numberOfLines = 2
         titleLabel.lineBreakMode = .byTruncatingTail
@@ -178,7 +180,8 @@ extension PhotoDetailVC : UICollectionViewDelegate{
         
         selectedIndex = indexPath!.row
         pageSelectionLabel.text = "   \(indexPath!.row+1)/\(pictures.count) Photos"
-        
+        titleLabel.text = photosTitles[indexPath!.row]
+
     }
     
 }
